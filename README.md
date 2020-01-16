@@ -8,7 +8,7 @@ Navigate to [https://www.katacoda.com/courses/docker/playground](https://www.kat
 Click on Start Scenario to start the play ground. 
 We'll be creating two docker containers as part of this lab. One for frontend and one for backend. Backend is a mysql container and it will be setup using scripts to create a database and required tables. Frontend is a .net core application which is basic crud app using mysql as backend.
 
- 1. Clone the repo using command `git clone https://github.com/ershad65/dockerdemo`
+ 1. Clone the repo using command `git clone https://github.com/emohammad/dockerdemo`
  2. Switch to dockerdemo directory. `cd dockerdemo`
  3. Build the .net image `docker build -t usersdemo .` Do not forget the `.` at the end of the command as it specifies the context for the docker to build.
  4. Switch to Database folder. `cd Database`
@@ -23,7 +23,7 @@ We'll be creating two docker containers as part of this lab. One for frontend an
 Navigate to [https://www.katacoda.com/courses/kubernetes/playground](https://www.katacoda.com/courses/kubernetes/playground) and click on Start Scenario. Wait for the k8s cluster to start up.
 We'll be using the docker images created in Lab1 for this lab. For convenience i pushed the docker images to docker hub and when k8s pods are created it'll directly pull the images from the hub. 
 
- 1. Clone the repo using command `git clone https://github.com/ershad65/dockerdemo`
+ 1. Clone the repo using command `git clone https://github.com/emohammad/dockerdemo`
  2. Switch to dockerdemo directory. `cd dockerdemo`
  3. Create a service for the backend first. Run `kubectl apply -f .\usersdemo-mysql.yml`
  4. Create a deployment for the backend which will create 1 pod using the docker image in hub. Run `kubectl apply -f .\usersdemo-mysql-deployment.yml`
