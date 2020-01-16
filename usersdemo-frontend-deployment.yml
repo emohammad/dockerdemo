@@ -15,6 +15,6 @@ spec:
       containers:
       - name: usersdemo
         imagePullPolicy: IfNotPresent
-        image: usersdemo:latest
+        image: emohammad/usersdemo:latest
         ports:
         - containerPort: 80        
