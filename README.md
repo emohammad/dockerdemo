@@ -25,10 +25,10 @@ We'll be using the docker images created in Lab1 for this lab. For convenience i
 
  1. Clone the repo using command `git clone https://github.com/emohammad/dockerdemo`
  2. Switch to dockerdemo directory. `cd dockerdemo`
- 3. Create a service for the backend first. Run `kubectl apply -f .\usersdemo-mysql.yml`
- 4. Create a deployment for the backend which will create 1 pod using the docker image in hub. Run `kubectl apply -f .\usersdemo-mysql-deployment.yml`
- 5. Create a service for the frontend . Run `kubectl apply -f .\usersdemo-frontend.yml`
- 6. Create a deployment for the frontend which will create 2 pods using the docker image in hub. Run `kubectl apply -f .\usersdemo-frontend-deployment.yml`
+ 3. Create a service for the backend first. Run `kubectl apply -f ./usersdemo-mysql.yml`
+ 4. Create a deployment for the backend which will create 1 pod using the docker image in hub. Run `kubectl apply -f ./usersdemo-mysql-deployment.yml`
+ 5. Create a service for the frontend . Run `kubectl apply -f ./usersdemo-frontend.yml`
+ 6. Create a deployment for the frontend which will create 2 pods using the docker image in hub. Run `kubectl apply -f ./usersdemo-frontend-deployment.yml`
  7. Run `kubectl get all` to check status of all services, pods and deployments. Pods should be in ready state.
  8. Run `kubectl get svc` to check the services. We should have a node port service which will expose the front end on a port. Port will be 5 digit and starting with 3.
  9. Click on + icon next to Terminal Host 1 window and click on select port to view on host 1. Enter the port number from previous command and click on display port. You should navigate to the app.
